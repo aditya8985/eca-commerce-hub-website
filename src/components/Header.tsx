@@ -28,14 +28,12 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-navy-600 to-eca-green-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">E</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-navy-800">ECA</h1>
-              <p className="text-xs text-gray-600">Commerce Academy</p>
-            </div>
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/bcf3d8f4-a95b-4fd5-bc9b-1882487478a3.png" 
+              alt="Ekartham Commerce Academy"
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}

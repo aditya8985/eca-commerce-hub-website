@@ -19,14 +19,12 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-eca-green-400 to-eca-green-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">E</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">ECA</h3>
-                <p className="text-sm text-gray-300">Commerce Academy</p>
-              </div>
+            <div className="mb-6">
+              <img 
+                src="/lovable-uploads/bcf3d8f4-a95b-4fd5-bc9b-1882487478a3.png" 
+                alt="Ekartham Commerce Academy"
+                className="h-16 w-auto mb-4"
+              />
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Empowering students with world-class commerce education through expert guidance, 
