@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Quote, Star } from 'lucide-react';
@@ -8,8 +7,8 @@ const ExpertsSection = () => {
     {
       id: 1,
       name: "Prof. Asif Khan",
-      speciality: "Mathematics & Statistics",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      speciality: "Mathematics & Statistics", 
+      image: "/lovable-uploads/e71a8272-ce17-48ec-a69f-36f06693129b.png",
       quote: "Let's take the fear out of numbers and turn learning into an exciting, rewarding experience!",
       experience: "12+ Years",
       students: "300+",
@@ -21,7 +20,7 @@ const ExpertsSection = () => {
       name: "CA Ritesh Pal",
       credentials: "CA, M.Com, LLB",
       speciality: "Taxation, Auditing, Law",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      image: "/lovable-uploads/7a529ede-1944-421d-870c-bf26fefa951c.png",
       quote: "Helping professionals grow with financial strategies and practical insights.",
       experience: "15+ Years",
       students: "500+",
@@ -33,7 +32,7 @@ const ExpertsSection = () => {
       name: "Adv. Priya Patni",
       credentials: "Masters in Law",
       speciality: "Corporate & Legal Education",
-      image: "https://images.unsplash.com/photo-1494790108755-2616c0763476?w=400&h=400&fit=crop&crop=face",
+      image: "/lovable-uploads/0800f8f2-a03f-4a92-a919-ac8394188154.png",
       quote: "Mentoring over 500 students with practical legal insights.",
       experience: "10+ Years",
       students: "500+",
@@ -45,7 +44,7 @@ const ExpertsSection = () => {
       name: "CA. Priyam Taneja",
       credentials: "CA, BCom",
       speciality: "Finance, Taxation, Auditing",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face",
+      image: "/lovable-uploads/96888a73-4480-41ed-90c7-1979caba49d7.png",
       quote: "Worked at Morgan Stanley & UBS. My success mantra: Chase excellence.",
       experience: "8+ Years",
       students: "200+",
@@ -57,7 +56,7 @@ const ExpertsSection = () => {
       id: 5,
       name: "CA Sejal Mittal",
       speciality: "Accounting, Taxation, Audit",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+      image: "/lovable-uploads/dfd7f104-a7aa-4c7c-aedd-7e2cfa0f6988.png",
       quote: "Work on YOU and Work for YOU.",
       experience: "9+ Years",
       students: "350+",
@@ -68,7 +67,7 @@ const ExpertsSection = () => {
       id: 6,
       name: "Prof. Priyanka Pal",
       speciality: "Economics, Taxation",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face",
+      image: "/lovable-uploads/dfee0dea-2009-4bd8-a195-16216d7e1ab2.png",
       quote: "Bringing clarity to complex economic and taxation concepts.",
       experience: "11+ Years",
       students: "400+",
