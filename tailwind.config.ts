@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,25 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// ECA Brand Colors
+				'navy': {
+					50: '#f0f4ff',
+					100: '#e0e7ff',
+					500: '#1e40af',
+					600: '#1d4ed8',
+					700: '#1e3a8a',
+					800: '#1e3a8a',
+					900: '#0f172a'
+				},
+				'eca-green': {
+					50: '#f0fdf4',
+					100: '#dcfce7',
+					400: '#4ade80',
+					500: '#22c55e',
+					600: '#16a34a',
+					700: '#15803d',
+					800: '#166534'
 				}
 			},
 			borderRadius: {
@@ -84,11 +104,33 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateX(-20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'slide-in': 'slide-in 0.8s ease-out'
 			}
 		}
 	},
