@@ -8,7 +8,6 @@ import ExpertsSection from '@/components/ExpertsSection';
 import ReviewsSection from '@/components/ReviewsSection';
 import VideoSection from '@/components/VideoSection';
 import ContactSection from '@/components/ContactSection';
-import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
 
 const Index = () => {
@@ -24,7 +23,6 @@ const Index = () => {
         <VideoSection />
         <ContactSection />
       </main>
-      <Footer />
       <FloatingButtons />
     </div>
   );

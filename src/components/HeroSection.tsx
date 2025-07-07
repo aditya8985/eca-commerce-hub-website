@@ -35,7 +35,7 @@ const HeroSection = () => {
           {/* Main heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-playfair font-bold text-white mb-6 leading-tight">
             <span className="block">Ekartham</span>
-            <span className="block bg-gradient-to-r from-eca-green-400 to-eca-green-300 bg-clip-text text-transparent">
+            <span className="block text-eca-green-400">
               Commerce Academy
             </span>
           </h1>
