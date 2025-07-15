@@ -16,7 +16,7 @@ const HeroSection = () => {
       {/* Background with gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700">
         <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 to-transparent"></div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/c993ba84-2fcd-4d50-8c3e-a3f26f9b1a54.png')] bg-cover bg-center bg-no-repeat opacity-10"></div>
       </div>
 
       {/* Floating elements for visual interest */}
@@ -47,15 +47,23 @@ const HeroSection = () => {
 
           {/* Description */}
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Empowering students with world-class education in CA Foundation, CS Executive, and Commerce (11th & 12th) through expert guidance and practical insights.
+            Empowering students with world-class education in CA Foundation, CS EET, CA Intermediate, and Commerce (11th & 12th) HSC/CBSE Preparation through expert guidance and practical insights.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
             <Button 
-              onClick={() => scrollTo('courses')}
+              onClick={() => scrollTo('test-series')}
               size="lg"
               className="bg-eca-green-500 hover:bg-eca-green-600 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl hover:scale-105 min-w-[200px]"
+            >
+              Test Series
+            </Button>
+            <Button 
+              onClick={() => scrollTo('courses')}
+              variant="outline"
+              size="lg"
+              className="border-2 border-white text-white hover:bg-white hover:text-navy-800 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl min-w-[200px]"
             >
               Explore Courses
             </Button>
@@ -65,7 +73,7 @@ const HeroSection = () => {
               size="lg"
               className="border-2 border-white text-white hover:bg-white hover:text-navy-800 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl min-w-[200px]"
             >
-              Enroll Now
+              Free Counseling
             </Button>
           </div>
 

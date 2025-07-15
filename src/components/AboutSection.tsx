@@ -1,29 +1,39 @@
 
 import React from 'react';
 import { Card } from '@/components/ui/card';
-import { Target, Users, Award, BookOpen } from 'lucide-react';
+import { GraduationCap, Users, Award, Video, FileText, CheckSquare } from 'lucide-react';
 
 const AboutSection = () => {
   const features = [
     {
-      icon: <Target className="w-8 h-8 text-eca-green-600" />,
-      title: "Expert-Led Learning",
-      description: "Learn from industry professionals with real-world experience in finance, accounting, and law."
+      icon: <GraduationCap className="w-8 h-8 text-eca-green-600" />,
+      title: "Young and expert faculty",
+      description: "Learn from young, dynamic professionals with real-world experience in finance, accounting, and law."
     },
     {
       icon: <Users className="w-8 h-8 text-eca-green-600" />,
-      title: "Personalized Attention",
+      title: "Personalized attention",
       description: "Small batch sizes ensure individual attention and customized learning paths for every student."
     },
     {
       icon: <Award className="w-8 h-8 text-eca-green-600" />,
-      title: "Proven Track Record",
-      description: "95% success rate with students excelling in CA Foundation, CS Executive, and Commerce exams."
+      title: "Proven track record",
+      description: "95% success rate with students excelling in CA Foundation, CS EET, and Commerce exams."
     },
     {
-      icon: <BookOpen className="w-8 h-8 text-eca-green-600" />,
-      title: "Comprehensive Curriculum",
-      description: "Updated curriculum aligned with latest exam patterns and industry requirements."
+      icon: <Video className="w-8 h-8 text-eca-green-600" />,
+      title: "Unlimited views for recorded lectures",
+      description: "Access recorded lectures anytime, anywhere with unlimited viewing facility for better understanding."
+    },
+    {
+      icon: <FileText className="w-8 h-8 text-eca-green-600" />,
+      title: "Colourful handwritten notes",
+      description: "Comprehensive handwritten notes with colorful diagrams and illustrations for better retention."
+    },
+    {
+      icon: <CheckSquare className="w-8 h-8 text-eca-green-600" />,
+      title: "Chapterwise test series",
+      description: "Regular chapter-wise assessments to track progress and strengthen weak areas effectively."
     }
   ];
 
@@ -39,62 +49,35 @@ const AboutSection = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             ECA (Ekartham Commerce Academy) is a leading institution dedicated to excellence in commerce education, 
-            specializing in CA Foundation, CS Executive, and Commerce (11th & 12th) preparation.
+            specializing in CA Foundation, CS EET, CA Intermediate, and Commerce (11th & 12th) HSC/CBSE Preparation.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Left side - Content */}
-          <div className="space-y-6">
-            <h3 className="text-2xl font-playfair font-semibold text-navy-800 mb-4">
-              Our Mission
-            </h3>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Empowering students with comprehensive, real-world education in finance, accounting, law, and economics. 
-              We bridge the gap between theoretical knowledge and practical application, preparing students for successful 
-              careers in commerce and finance.
-            </p>
-            
-            <div className="bg-gradient-to-r from-eca-green-50 to-navy-50 p-6 rounded-xl border-l-4 border-eca-green-500">
-              <h4 className="font-semibold text-navy-800 mb-2">Why Choose ECA?</h4>
-              <p className="text-gray-700">
+        <div className="mb-16">
+          {/* Why Choose ECA Section - Enlarged */}
+          <div className="bg-gradient-to-r from-eca-green-50 to-navy-50 p-12 rounded-2xl border-l-8 border-eca-green-500 shadow-lg">
+            <h3 className="text-4xl font-playfair font-bold text-navy-800 mb-8 text-center">Why Choose ECA?</h3>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-xl text-gray-700 leading-relaxed text-center mb-8">
                 Our unique teaching methodology combines traditional academic rigor with modern pedagogical techniques, 
                 ensuring students not only pass their exams but excel in their chosen careers.
               </p>
-            </div>
-          </div>
-
-          {/* Right side - Image */}
-          <div className="relative">
-            <div className="bg-gradient-to-br from-navy-600 to-eca-green-500 rounded-2xl p-8 text-white">
-              <div className="mb-6">
-                <h4 className="text-2xl font-bold mb-2">Our Vision</h4>
-                <p className="text-gray-100 leading-relaxed">
-                  To be the most trusted and respected commerce education institution, 
-                  known for producing confident, competent, and successful professionals.
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-2 gap-4 mt-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-eca-green-300">8+</div>
-                  <div className="text-sm text-gray-200">Years Experience</div>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-white p-6 rounded-xl shadow-md">
+                  <h4 className="text-2xl font-bold text-navy-800 mb-4">8+ Years Experience</h4>
+                  <p className="text-gray-700">Proven track record of excellence in commerce education with consistent results.</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-eca-green-300">1000+</div>
-                  <div className="text-sm text-gray-200">Success Stories</div>
+                <div className="bg-white p-6 rounded-xl shadow-md">
+                  <h4 className="text-2xl font-bold text-navy-800 mb-4">1000+ Success Stories</h4>
+                  <p className="text-gray-700">Thousands of students have achieved their dreams through our comprehensive programs.</p>
                 </div>
               </div>
             </div>
-            
-            {/* Decorative elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-eca-green-200 rounded-full opacity-20"></div>
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-navy-200 rounded-full opacity-20"></div>
           </div>
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <Card key={index} className="p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white border-0 shadow-md">
               <div className="flex justify-center mb-4">
