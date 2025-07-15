@@ -94,7 +94,7 @@ const HeroSection = () => {
               <div className="text-sm text-gray-300">Success Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-white mb-1">3</div>
+              <div className="text-2xl font-bold text-white mb-1">4</div>
               <div className="text-sm text-gray-300">Specialized Courses</div>
             </div>
           </div>
