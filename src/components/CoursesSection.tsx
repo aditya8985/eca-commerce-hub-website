@@ -8,36 +8,58 @@ const CoursesSection = () => {
   const courses = [
     {
       id: 1,
-      title: "CA Foundation",
-      icon: <Calculator className="w-8 h-8 text-eca-green-600" />,
-      description: "Comprehensive preparation for Chartered Accountancy Foundation level with expert guidance and practice.",
-      subjects: ["Principles of Accounting", "Business Laws", "Business Mathematics", "Business Economics"],
-      duration: "8-12 Months",
-      batchSize: "15-20 Students",
-      features: ["Live Interactive Classes", "Regular Mock Tests", "Doubt Clearing Sessions", "Study Materials"],
+      title: "11th & 12th HSC",
+      icon: <GraduationCap className="w-8 h-8 text-eca-green-600" />,
+      description: "Comprehensive HSC Commerce program with focus on state board excellence and conceptual clarity.",
+      subjects: ["Accounts", "Economics", "Organization of commerce and management (O.C.M)", "Business Mathematics", "Secretarial Practice (S.P.)"],
+      duration: "2 Years",
+      batchSize: "20-25 Students",
+      features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance", "Recorded lectures"],
       gradient: "from-blue-500 to-navy-600"
     },
     {
       id: 2,
-      title: "CS Executive",
-      icon: <FileText className="w-8 h-8 text-eca-green-600" />,
-      description: "Complete Company Secretary Executive program covering all modules with practical case studies.",
-      subjects: ["Company Law", "Cost Accounting", "Tax Laws", "Corporate & Management Accounting"],
-      duration: "10-14 Months",
-      batchSize: "12-18 Students",
-      features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance"],
-      gradient: "from-eca-green-500 to-eca-green-600"
+      title: "11th & 12th CBSE",
+      icon: <GraduationCap className="w-8 h-8 text-eca-green-600" />,
+      description: "Comprehensive CBSE Commerce program designed for national board excellence and strong foundation building.",
+      subjects: ["Accounts", "Economics", "Organization of commerce and management (O.C.M)", "Business Mathematics", "Secretarial Practice (S.P.)"],
+      duration: "2 Years",
+      batchSize: "20-25 Students",
+      features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance", "Recorded lectures"],
+      gradient: "from-purple-500 to-navy-600"
     },
     {
       id: 3,
-      title: "Commerce (11th & 12th)",
-      icon: <GraduationCap className="w-8 h-8 text-eca-green-600" />,
-      description: "Foundation building program for 11th and 12th Commerce students with focus on board exam excellence.",
-      subjects: ["Accountancy", "Business Studies", "Economics", "Applied Mathematics"],
-      duration: "2 Years",
-      batchSize: "20-25 Students",
-      features: ["Board Exam Focus", "Conceptual Clarity", "Regular Practice", "Parent-Teacher Meetings"],
-      gradient: "from-purple-500 to-navy-600"
+      title: "CA Foundation",
+      icon: <Calculator className="w-8 h-8 text-eca-green-600" />,
+      description: "Comprehensive preparation for Chartered Accountancy Foundation level with expert guidance and practice.",
+      subjects: ["Accounts", "Law", "Mathematics", "Economics"],
+      duration: "6-12 Months",
+      batchSize: "15-20 Students",
+      features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance", "Recorded lectures"],
+      gradient: "from-eca-green-500 to-eca-green-600"
+    },
+    {
+      id: 4,
+      title: "CA Intermediate",
+      icon: <Calculator className="w-8 h-8 text-eca-green-600" />,
+      description: "Advanced preparation for CA Intermediate level with comprehensive coverage of all subjects.",
+      subjects: ["Advanced Accounting", "Corporate Laws", "Cost Management", "Taxation", "Auditing", "Financial Management"],
+      duration: "6 Months",
+      batchSize: "12-18 Students",
+      features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance", "Recorded lectures"],
+      gradient: "from-orange-500 to-red-600"
+    },
+    {
+      id: 5,
+      title: "CS EET",
+      icon: <FileText className="w-8 h-8 text-eca-green-600" />,
+      description: "Complete preparation for Company Secretary Executive Entrance Test with focused training and practice.",
+      subjects: ["Business communication", "Logical reasoning and legal aptitude", "Economics and business environment", "Current affairs and quantitative aptitude"],
+      duration: "3 Months",
+      batchSize: "15-20 Students",
+      features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance", "Recorded lectures"],
+      gradient: "from-teal-500 to-blue-600"
     }
   ];
 
