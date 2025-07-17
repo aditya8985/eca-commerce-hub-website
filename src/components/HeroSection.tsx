@@ -80,23 +80,23 @@ const HeroSection = () => {
 
       {/* Stats section at bottom */}
       <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-sm border-t border-white/20">
-        <div className="max-w-7xl mx-auto px-4 py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="text-center">
-              <div className="text-2xl font-bold text-white mb-1">500+</div>
-              <div className="text-sm text-gray-300">Students Mentored</div>
+              <div className="text-lg font-bold text-white mb-0.5">500+</div>
+              <div className="text-xs text-gray-300">Students Mentored</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-white mb-1">6+</div>
-              <div className="text-sm text-gray-300">Expert Faculty</div>
+              <div className="text-lg font-bold text-white mb-0.5">6+</div>
+              <div className="text-xs text-gray-300">Expert Faculty</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-white mb-1">95%</div>
-              <div className="text-sm text-gray-300">Success Rate</div>
+              <div className="text-lg font-bold text-white mb-0.5">95%</div>
+              <div className="text-xs text-gray-300">Success Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-white mb-1">4</div>
-              <div className="text-sm text-gray-300">Specialized Courses</div>
+              <div className="text-lg font-bold text-white mb-0.5">4</div>
+              <div className="text-xs text-gray-300">Specialized Courses</div>
             </div>
           </div>
         </div>
