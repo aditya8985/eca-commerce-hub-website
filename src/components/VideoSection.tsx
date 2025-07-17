@@ -17,51 +17,19 @@ const VideoSection = () => {
         </div>
 
         {/* YouTube Short */}
-        <div className="relative max-w-4xl mx-auto mb-16">
-          <div className="relative bg-gradient-to-br from-navy-50 to-eca-green-50 rounded-2xl p-8">
-            <div className="flex flex-col lg:flex-row items-center gap-8">
-              {/* YouTube video */}
-              <div className="lg:w-1/2">
-                <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/1TFJSGHm-HM"
-                    title="ECA Academy Campus Life"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    className="absolute inset-0"
-                    style={{ minHeight: '300px' }}
-                  ></iframe>
-                </div>
-              </div>
-              
-              {/* Content */}
-              <div className="lg:w-1/2 text-center lg:text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-navy-800 mb-4">
-                  ECA Campus Highlights
-                </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  Watch our students excel in interactive learning sessions, expert lectures, 
-                  and success celebrations that make ECA a special place to learn and grow.
-                </p>
-                <div className="grid grid-cols-3 gap-4 text-center">
-                  <div>
-                    <div className="text-xl font-bold text-navy-800">2M+</div>
-                    <div className="text-sm text-gray-600">Views</div>
-                  </div>
-                  <div>
-                    <div className="text-xl font-bold text-eca-green-600">15K+</div>
-                    <div className="text-sm text-gray-600">Likes</div>
-                  </div>
-                  <div>
-                    <div className="text-xl font-bold text-navy-800">500+</div>
-                    <div className="text-sm text-gray-600">Shares</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="relative max-w-6xl mx-auto mb-16">
+          <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/1TFJSGHm-HM"
+              title="ECA Academy Campus Life"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="absolute inset-0"
+              style={{ minHeight: '400px' }}
+            ></iframe>
           </div>
         </div>
 
