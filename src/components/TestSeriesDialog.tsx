@@ -57,7 +57,7 @@ const TestSeriesDialog = ({ children }: TestSeriesDialogProps) => {
 
     try {
       // Google Sheets API endpoint (you'll need to set up Google Apps Script)
-      const response = await fetch('https://script.google.com/macros/s/AKfycbzYourScriptId/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbzXZdysnsPU2mC_XtC2kUmaPUwvMO7ex3KO4gi-1ZNaDO-ChKZkf16PZXEmeCucLErBCA/exec', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
