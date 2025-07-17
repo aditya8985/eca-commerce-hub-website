@@ -16,7 +16,7 @@ const TestSeriesDialog = ({ children }: TestSeriesDialogProps) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    mobile: '',
+    phone: '',
     course: '',
     portion: ''
   });
@@ -44,7 +44,7 @@ const TestSeriesDialog = ({ children }: TestSeriesDialogProps) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!formData.name || !formData.email || !formData.mobile || !formData.course || !formData.portion) {
+    if (!formData.name || !formData.email || !formData.phone || !formData.course || !formData.portion) {
       toast({
         title: "Error",
         description: "Please fill in all fields",
@@ -66,10 +66,9 @@ const TestSeriesDialog = ({ children }: TestSeriesDialogProps) => {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          mobile: formData.mobile,
+          phone: formData.phone,
           course: formData.course,
           portion: `${formData.portion}%`,
-          timestamp: new Date().toISOString(),
         }),
       });
 
@@ -79,7 +78,7 @@ const TestSeriesDialog = ({ children }: TestSeriesDialogProps) => {
       });
 
       // Reset form and close dialog
-      setFormData({ name: '', email: '', mobile: '', course: '', portion: '' });
+      setFormData({ name: '', email: '', phone: '', course: '', portion: '' });
       setIsOpen(false);
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -89,7 +88,7 @@ const TestSeriesDialog = ({ children }: TestSeriesDialogProps) => {
       });
       
       // Reset form and close dialog even on error (since we're using no-cors)
-      setFormData({ name: '', email: '', mobile: '', course: '', portion: '' });
+      setFormData({ name: '', email: '', phone: '', course: '', portion: '' });
       setIsOpen(false);
     } finally {
       setIsSubmitting(false);
@@ -134,13 +133,13 @@ const TestSeriesDialog = ({ children }: TestSeriesDialogProps) => {
           </div>
 
           <div>
-            <Label htmlFor="mobile">Mobile Number</Label>
+            <Label htmlFor="phone">Phone Number</Label>
             <Input
-              id="mobile"
+              id="phone"
               type="tel"
-              value={formData.mobile}
-              onChange={(e) => handleInputChange('mobile', e.target.value)}
-              placeholder="Enter your mobile number"
+              value={formData.phone}
+              onChange={(e) => handleInputChange('phone', e.target.value)}
+              placeholder="Enter your phone number"
               required
             />
           </div>
