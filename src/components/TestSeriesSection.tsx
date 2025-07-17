@@ -73,7 +73,7 @@ const TestSeriesSection = () => {
                 <TableHead className="font-bold text-gray-900">Feature</TableHead>
                 <TableHead className="font-bold text-gray-900 text-center">No Test</TableHead>
                 <TableHead className="font-bold text-gray-900 text-center">Ordinary Tests</TableHead>
-                <TableHead className="font-bold text-gray-900 text-center bg-blue-100">PREPCA Tests</TableHead>
+                <TableHead className="font-bold text-gray-900 text-center bg-blue-100">ECA Tests</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -99,7 +99,7 @@ const TestSeriesSection = () => {
 
         <div className="text-center mt-8">
           <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200">
-            Choose PREPCA Tests
+            Choose ECA Tests
           </button>
         </div>
       </div>
