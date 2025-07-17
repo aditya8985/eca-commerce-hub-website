@@ -10,7 +10,6 @@ import ReviewsSection from '@/components/ReviewsSection';
 import VideoSection from '@/components/VideoSection';
 import ContactSection from '@/components/ContactSection';
 import FloatingButtons from '@/components/FloatingButtons';
-import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
@@ -26,7 +25,14 @@ const Index = () => {
         <VideoSection />
         <ContactSection />
       </main>
-      <Footer />
+      
+      {/* Simple Copyright Footer */}
+      <footer className="bg-navy-900 text-center py-6">
+        <p className="text-gray-400 text-sm">
+          Copyright All Rights Reserved. Powered by <a href="https://nimbusware.in" target="_blank" rel="noopener noreferrer" className="text-eca-green-400 hover:text-eca-green-300 transition-colors duration-200">nimbusware</a>. @2025.
+        </p>
+      </footer>
+      
       <FloatingButtons />
     </div>
   );
