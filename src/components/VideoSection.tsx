@@ -20,7 +20,7 @@ const VideoSection = () => {
         <div className="relative max-w-6xl mx-auto mb-16">
           <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl">
             <iframe
-              width="80%"
+              width="100%"
               height="100%"
               src="https://www.youtube.com/embed/1TFJSGHm-HM"
               title="ECA Academy Campus Life"
