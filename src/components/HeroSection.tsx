@@ -63,7 +63,7 @@ const HeroSection = () => {
               onClick={() => scrollTo('courses')}
               variant="outline"
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-navy-800 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl min-w-[200px]"
+              className="border-2 border-white text-navy-800 bg-white hover:bg-white hover:text-navy-800 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl min-w-[200px]"
             >
               Explore Courses
             </Button>
@@ -71,7 +71,7 @@ const HeroSection = () => {
               onClick={() => scrollTo('contact')}
               variant="outline"
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-navy-800 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl min-w-[200px]"
+              className="border-2 border-white text-navy-800 bg-white hover:bg-white hover:text-navy-800 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl min-w-[200px]"
             >
               Free Counseling
             </Button>

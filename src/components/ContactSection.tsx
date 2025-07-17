@@ -94,7 +94,20 @@ const ContactSection = () => {
                       <div className="flex-1">
                         <h4 className="font-semibold text-navy-800 mb-2">{info.title}</h4>
                         {info.details.map((detail, idx) => (
-                          <p key={idx} className="text-gray-600 text-sm mb-1">{detail}</p>
+                          <p key={idx} className="text-gray-600 text-sm mb-1">
+                            {info.title === "Visit Us" && info.link ? (
+                              <a 
+                                href={info.link} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="text-eca-green-600 hover:underline cursor-pointer"
+                              >
+                                {detail}
+                              </a>
+                            ) : (
+                              detail
+                            )}
+                          </p>
                         ))}
                         {info.link && (
                           <a 
@@ -113,23 +126,31 @@ const ContactSection = () => {
               </div>
             </div>
 
-            {/* Map placeholder */}
-            <div className="bg-gray-200 rounded-2xl h-64 flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-navy-500/20 to-eca-green-500/20"></div>
-              <div className="relative z-10 text-center">
-                <MapPin className="w-12 h-12 text-navy-600 mx-auto mb-4" />
-                <h4 className="text-lg font-semibold text-navy-800 mb-2">ECA Academy Location</h4>
-                <p className="text-gray-600 text-sm">
-                  Interactive map will be embedded here
-                  <br />
-                  showing our exact location
-                </p>
-              </div>
-              
-              {/* Decorative map elements */}
-              <div className="absolute top-4 left-4 w-3 h-3 bg-eca-green-500 rounded-full"></div>
-              <div className="absolute bottom-6 right-8 w-2 h-2 bg-navy-500 rounded-full"></div>
-              <div className="absolute top-1/3 right-1/4 w-4 h-4 bg-eca-green-400 rounded-full opacity-60"></div>
+            {/* Google Map */}
+            <div className="bg-gray-200 rounded-2xl h-64 relative overflow-hidden group cursor-pointer">
+              <a 
+                href="https://maps.app.goo.gl/vsq66rQdtu7QFZX69?g_st=ipc" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block h-full w-full"
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.0!2d73.7897!3d18.6298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb6c1b4a6b9b%3A0x1b4a6b9b6c1b4a6b!2sMayur%20Trade%20Center%2C%20Chinchwad%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411019!5e0!3m2!1sen!2sin!4v1234567890"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-2xl group-hover:scale-105 transition-transform duration-300"
+                ></iframe>
+                <div className="absolute inset-0 bg-gradient-to-br from-navy-500/10 to-eca-green-500/10 rounded-2xl group-hover:opacity-0 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="text-center text-white bg-black/50 rounded-lg p-3">
+                    <MapPin className="w-8 h-8 mx-auto mb-2" />
+                    <p className="text-sm font-medium">Click to open in Google Maps</p>
+                  </div>
+                </div>
+              </a>
             </div>
 
             {/* Quick contact buttons */}

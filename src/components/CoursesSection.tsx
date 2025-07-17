@@ -41,25 +41,14 @@ const CoursesSection = () => {
     },
     {
       id: 4,
-      title: "CA Intermediate - Part 1",
+      title: "CA Intermediate",
       icon: <Calculator className="w-8 h-8 text-eca-green-600" />,
-      description: "Advanced preparation for CA Intermediate Part 1 with comprehensive coverage of all subjects.",
-      subjects: ["Advanced Accounting", "Corporate Laws", "Cost Management", "Taxation"],
-      duration: "3 Months",
+      description: "Comprehensive preparation for CA Intermediate covering both Part 1 and Part 2 with complete coverage of all subjects.",
+      subjects: ["Advanced Accounting", "Corporate Laws", "Cost Management", "Taxation", "Auditing", "Financial Management", "Advanced Taxation"],
+      duration: "6 months (I-3m, II-3m)",
       batchSize: "12-18 Students",
       features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance", "Recorded lectures"],
       color: "bg-orange-500"
-    },
-    {
-      id: 5,
-      title: "CA Intermediate - Part 2",
-      icon: <Calculator className="w-8 h-8 text-eca-green-600" />,
-      description: "Advanced preparation for CA Intermediate Part 2 with comprehensive coverage of all subjects.",
-      subjects: ["Auditing", "Financial Management", "Advanced Taxation", "Corporate Laws"],
-      duration: "3 Months",
-      batchSize: "12-18 Students",
-      features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance", "Recorded lectures"],
-      color: "bg-red-500"
     },
     {
       id: 6,
