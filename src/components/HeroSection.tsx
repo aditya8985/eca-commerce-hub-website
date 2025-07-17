@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowDown } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollTo = (elementId: string) => {
@@ -51,36 +50,30 @@ const HeroSection = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-16">
             <Button 
               onClick={() => scrollTo('test-series')}
-              size="lg"
-              className="bg-eca-green-500 hover:bg-eca-green-600 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl hover:scale-105 min-w-[200px]"
+              size="default"
+              className="bg-eca-green-500 hover:bg-eca-green-600 text-white px-6 py-3 text-base font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl hover:scale-105"
             >
               Test Series
             </Button>
             <Button 
               onClick={() => scrollTo('courses')}
               variant="outline"
-              size="lg"
-              className="border-2 border-white text-navy-800 bg-white hover:bg-white hover:text-navy-800 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl min-w-[200px]"
+              size="default"
+              className="border-2 border-white text-navy-800 bg-white hover:bg-white hover:text-navy-800 px-6 py-3 text-base font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl"
             >
               Explore Courses
             </Button>
             <Button 
               onClick={() => scrollTo('contact')}
               variant="outline"
-              size="lg"
-              className="border-2 border-white text-navy-800 bg-white hover:bg-white hover:text-navy-800 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl min-w-[200px]"
+              size="default"
+              className="border-2 border-white text-navy-800 bg-white hover:bg-white hover:text-navy-800 px-6 py-3 text-base font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl"
             >
               Free Counseling
             </Button>
-          </div>
-
-          {/* Scroll indicator */}
-          <div className="flex flex-col items-center text-gray-400">
-            <p className="text-sm mb-2">Discover More</p>
-            <ArrowDown className="w-6 h-6 animate-bounce" />
           </div>
         </div>
       </div>
