@@ -15,7 +15,7 @@ const CoursesSection = () => {
       duration: "2 Years",
       batchSize: "20-25 Students",
       features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance", "Recorded lectures"],
-      gradient: "from-blue-500 to-navy-600"
+      color: "bg-blue-500"
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ const CoursesSection = () => {
       duration: "2 Years",
       batchSize: "20-25 Students",
       features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance", "Recorded lectures"],
-      gradient: "from-purple-500 to-navy-600"
+      color: "bg-purple-500"
     },
     {
       id: 3,
@@ -37,21 +37,32 @@ const CoursesSection = () => {
       duration: "6-12 Months",
       batchSize: "15-20 Students",
       features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance", "Recorded lectures"],
-      gradient: "from-eca-green-500 to-eca-green-600"
+      color: "bg-eca-green-500"
     },
     {
       id: 4,
-      title: "CA Intermediate",
+      title: "CA Intermediate - Part 1",
       icon: <Calculator className="w-8 h-8 text-eca-green-600" />,
-      description: "Advanced preparation for CA Intermediate level with comprehensive coverage of all subjects.",
-      subjects: ["Advanced Accounting", "Corporate Laws", "Cost Management", "Taxation", "Auditing", "Financial Management"],
-      duration: "6 Months",
+      description: "Advanced preparation for CA Intermediate Part 1 with comprehensive coverage of all subjects.",
+      subjects: ["Advanced Accounting", "Corporate Laws", "Cost Management", "Taxation"],
+      duration: "3 Months",
       batchSize: "12-18 Students",
       features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance", "Recorded lectures"],
-      gradient: "from-orange-500 to-red-600"
+      color: "bg-orange-500"
     },
     {
       id: 5,
+      title: "CA Intermediate - Part 2",
+      icon: <Calculator className="w-8 h-8 text-eca-green-600" />,
+      description: "Advanced preparation for CA Intermediate Part 2 with comprehensive coverage of all subjects.",
+      subjects: ["Auditing", "Financial Management", "Advanced Taxation", "Corporate Laws"],
+      duration: "3 Months",
+      batchSize: "12-18 Students",
+      features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance", "Recorded lectures"],
+      color: "bg-red-500"
+    },
+    {
+      id: 6,
       title: "CS EET",
       icon: <FileText className="w-8 h-8 text-eca-green-600" />,
       description: "Complete preparation for Company Secretary Executive Entrance Test with focused training and practice.",
@@ -59,7 +70,7 @@ const CoursesSection = () => {
       duration: "3 Months",
       batchSize: "15-20 Students",
       features: ["Case Study Analysis", "Industry Expert Sessions", "Regular Assessments", "Career Guidance", "Recorded lectures"],
-      gradient: "from-teal-500 to-blue-600"
+      color: "bg-teal-500"
     }
   ];
 
@@ -89,7 +100,7 @@ const CoursesSection = () => {
           {courses.map((course, index) => (
             <Card key={course.id} className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white border-0 shadow-lg">
               {/* Header with gradient */}
-              <div className={`bg-gradient-to-r ${course.gradient} p-6 text-white relative`}>
+              <div className={`${course.color} p-6 text-white relative`}>
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="p-3 bg-white/20 rounded-full backdrop-blur-sm">
                     {course.icon}

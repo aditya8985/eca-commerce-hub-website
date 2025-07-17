@@ -6,73 +6,68 @@ const ExpertsSection = () => {
   const experts = [
     {
       id: 1,
-      name: "Prof. Asif Khan",
-      speciality: "Mathematics & Statistics", 
-      image: "/lovable-uploads/e71a8272-ce17-48ec-a69f-36f06693129b.png",
-      quote: "Let's take the fear out of numbers and turn learning into an exciting, rewarding experience!",
-      experience: "12+ Years",
-      students: "300+",
-      expertise: ["Business Mathematics", "Statistics", "Quantitative Techniques", "Data Analysis"],
-      rating: 4.9
-    },
-    {
-      id: 2,
-      name: "CA Ritesh Pal",
-      credentials: "CA, M.Com, LLB",
-      speciality: "Taxation, Auditing, Law",
-      image: "/lovable-uploads/7a529ede-1944-421d-870c-bf26fefa951c.png",
-      quote: "Helping professionals grow with financial strategies and practical insights.",
-      experience: "15+ Years",
-      students: "500+",
-      expertise: ["Direct & Indirect Taxation", "Financial Audit", "Corporate Law", "Financial Planning"],
-      rating: 4.8
-    },
-    {
-      id: 3,
-      name: "Adv. Priya Patni",
-      credentials: "Masters in Law",
-      speciality: "Corporate & Legal Education",
-      image: "/lovable-uploads/0800f8f2-a03f-4a92-a919-ac8394188154.png",
-      quote: "Mentoring over 500 students with practical legal insights.",
-      experience: "10+ Years",
-      students: "500+",
-      expertise: ["Corporate Law", "Business Laws", "Contract Law", "Legal Compliance"],
-      rating: 4.9
-    },
-    {
-      id: 4,
-      name: "CA. Priyam Taneja",
-      credentials: "CA, BCom",
-      speciality: "Finance, Taxation, Auditing",
-      image: "/lovable-uploads/96888a73-4480-41ed-90c7-1979caba49d7.png",
-      quote: "Worked at Morgan Stanley & UBS. My success mantra: Chase excellence.",
-      experience: "8+ Years",
-      students: "200+",
-      expertise: ["Investment Banking", "Financial Analysis", "Advanced Taxation", "Audit & Assurance"],
-      rating: 4.9,
-      highlight: "Ex-Morgan Stanley & UBS"
-    },
-    {
-      id: 5,
       name: "CA Sejal Mittal",
+      credentials: "CA, B.Com",
       speciality: "Accounting, Taxation, Audit",
       image: "/lovable-uploads/dfd7f104-a7aa-4c7c-aedd-7e2cfa0f6988.png",
       quote: "Work on YOU and Work for YOU.",
       experience: "9+ Years",
       students: "350+",
-      expertise: ["Advanced Accounting", "GST & Tax Planning", "Internal Audit", "Financial Reporting"],
-      rating: 4.8
+      expertise: ["Advanced Accounting", "GST & Tax Planning", "Internal Audit", "Financial Reporting"]
+    },
+    {
+      id: 2,
+      name: "Prof. Asif Khan",
+      speciality: "Mathematics & Statistics", 
+      image: "/lovable-uploads/e71a8272-ce17-48ec-a69f-36f06693129b.png",
+      quote: "Let's take the fear out of numbers and turn learning into an exciting, rewarding experience!",
+      experience: "8+ Years",
+      students: "500+",
+      expertise: ["Business Mathematics", "Statistics", "Quantitative Techniques", "Data Analysis"]
+    },
+    {
+      id: 3,
+      name: "Adv. Priya Patni",
+      credentials: "B.Com, LLM",
+      speciality: "Corporate & Legal Education",
+      image: "/lovable-uploads/0800f8f2-a03f-4a92-a919-ac8394188154.png",
+      quote: "Mentoring over 500 students with practical legal insights.",
+      experience: "6+ Years",
+      students: "500+",
+      expertise: ["Corporate Law", "Business Laws", "Contract Law", "Legal Compliance"]
+    },
+    {
+      id: 4,
+      name: "Prof. Priyanka Pal",
+      speciality: "Economics",
+      image: "/lovable-uploads/dfee0dea-2009-4bd8-a195-16216d7e1ab2.png",
+      quote: "Bringing clarity to complex economic concepts.",
+      experience: "11+ Years",
+      students: "400+",
+      expertise: ["Micro & Macro Economics", "Economic Analysis", "Business Economics"]
+    },
+    {
+      id: 5,
+      name: "CA Ritesh Pal",
+      credentials: "CA, M.Com, LLB",
+      speciality: "Taxation, Auditing, Law",
+      image: "/lovable-uploads/7a529ede-1944-421d-870c-bf26fefa951c.png",
+      quote: "Building strong financial foundations for future success.",
+      experience: "8+ Years",
+      students: "500+",
+      expertise: ["Direct & Indirect Taxation", "Financial Audit", "Corporate Law", "Financial Planning"]
     },
     {
       id: 6,
-      name: "Prof. Priyanka Pal",
-      speciality: "Economics, Taxation",
-      image: "/lovable-uploads/dfee0dea-2009-4bd8-a195-16216d7e1ab2.png",
-      quote: "Bringing clarity to complex economic and taxation concepts.",
-      experience: "11+ Years",
-      students: "400+",
-      expertise: ["Micro & Macro Economics", "Economic Analysis", "Tax Economics", "Business Economics"],
-      rating: 4.9
+      name: "CA. Priyam Taneja",
+      credentials: "CA, BCom",
+      speciality: "Finance, Taxation, Auditing, Accounting",
+      image: "/lovable-uploads/96888a73-4480-41ed-90c7-1979caba49d7.png",
+      quote: "Worked at Morgan Stanley & UBS. My success mantra: Chase excellence.",
+      experience: "8+ Years",
+      students: "200+",
+      expertise: ["Investment Banking", "Financial Analysis", "Advanced Taxation", "Audit & Assurance"],
+      highlight: "Ex-Morgan Stanley & UBS"
     }
   ];
 
@@ -104,11 +99,6 @@ const ExpertsSection = () => {
                   />
                 </div>
                 
-                {/* Overlay with rating */}
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
-                  <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                  <span className="text-sm font-semibold text-gray-800">{expert.rating}</span>
-                </div>
 
                 {/* Highlight badge if exists */}
                 {expert.highlight && (
@@ -182,7 +172,7 @@ const ExpertsSection = () => {
               <span>4.9/5 Average Faculty Rating</span>
             </div>
             <div className="text-sm">•</div>
-            <div className="text-sm">1000+ Success Stories</div>
+            <div className="text-sm">500+ Success Stories</div>
           </div>
         </div>
       </div>

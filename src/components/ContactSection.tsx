@@ -36,20 +36,23 @@ const ContactSection = () => {
     {
       icon: <MapPin className="w-6 h-6 text-eca-green-600" />,
       title: "Visit Us",
-      details: ["123 Education Lane", "Commerce District", "Mumbai, Maharashtra 400001"],
-      action: "Get Directions"
+      details: ["Shop No.-107,108, 1st Floor,", "Mayur Trade Center, Phase 2,", "Old Mumbai-Pune Highway, Station,", "Chinchwad, Pune, Maharashtra 411019"],
+      action: "Get Directions",
+      link: "https://maps.app.goo.gl/vsq66rQdtu7QFZX69?g_st=ipc"
     },
     {
       icon: <Phone className="w-6 h-6 text-eca-green-600" />,
       title: "Call Us",
-      details: ["+91 98765 43210", "+91 87654 32109"],
-      action: "Call Now"
+      details: ["9022465538"],
+      action: "Call Now",
+      link: "tel:9022465538"
     },
     {
       icon: <Mail className="w-6 h-6 text-eca-green-600" />,
       title: "Email Us",
-      details: ["info@ecaacademy.com", "admissions@ecaacademy.com"],
-      action: "Send Email"
+      details: ["info.ekarthamcommerceacademy@gmail.com"],
+      action: "Send Email",
+      link: "mailto:info.ekarthamcommerceacademy@gmail.com"
     },
     {
       icon: <Clock className="w-6 h-6 text-eca-green-600" />,
@@ -93,6 +96,16 @@ const ContactSection = () => {
                         {info.details.map((detail, idx) => (
                           <p key={idx} className="text-gray-600 text-sm mb-1">{detail}</p>
                         ))}
+                        {info.link && (
+                          <a 
+                            href={info.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-eca-green-600 text-sm font-medium hover:underline mt-2 inline-block"
+                          >
+                            {info.action}
+                          </a>
+                        )}
                       </div>
                     </div>
                   </Card>
@@ -121,19 +134,31 @@ const ContactSection = () => {
 
             {/* Quick contact buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                className="flex-1 bg-eca-green-500 hover:bg-eca-green-600 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:shadow-lg"
+              <a 
+                href="http://wa.me/919022465538" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex-1"
               >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                WhatsApp Chat
-              </Button>
-              <Button 
-                variant="outline"
-                className="flex-1 border-2 border-navy-600 text-navy-600 hover:bg-navy-600 hover:text-white font-semibold py-3 rounded-lg transition-all duration-300"
+                <Button 
+                  className="w-full bg-eca-green-500 hover:bg-eca-green-600 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:shadow-lg"
+                >
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  WhatsApp Chat
+                </Button>
+              </a>
+              <a 
+                href="tel:9022465538"
+                className="flex-1"
               >
-                <Phone className="w-5 h-5 mr-2" />
-                Call Now
-              </Button>
+                <Button 
+                  variant="outline"
+                  className="w-full border-2 border-navy-600 text-navy-600 hover:bg-navy-600 hover:text-white font-semibold py-3 rounded-lg transition-all duration-300"
+                >
+                  <Phone className="w-5 h-5 mr-2" />
+                  Call Now
+                </Button>
+              </a>
             </div>
           </div>
 
