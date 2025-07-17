@@ -28,7 +28,7 @@ const VideoSection = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               className="absolute inset-0"
-              style={{ minHeight: '400px' }}
+              style={{ minHeight: '800px' }}
             ></iframe>
           </div>
         </div>
