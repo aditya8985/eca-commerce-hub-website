@@ -7,6 +7,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { Button } from "@/components/ui/button";
+import TestSeriesDialog from "./TestSeriesDialog";
 
 const TestSeriesSection = () => {
   const tableData = [
@@ -98,9 +100,11 @@ const TestSeriesSection = () => {
         </div>
 
         <div className="text-center mt-8">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200">
-            Choose ECA Tests
-          </button>
+          <TestSeriesDialog>
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200">
+              Choose ECA Tests
+            </Button>
+          </TestSeriesDialog>
         </div>
       </div>
     </section>
