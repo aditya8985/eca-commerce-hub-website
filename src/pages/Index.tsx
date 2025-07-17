@@ -10,6 +10,7 @@ import ReviewsSection from '@/components/ReviewsSection';
 import VideoSection from '@/components/VideoSection';
 import ContactSection from '@/components/ContactSection';
 import FloatingButtons from '@/components/FloatingButtons';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
@@ -25,6 +26,7 @@ const Index = () => {
         <VideoSection />
         <ContactSection />
       </main>
+      <Footer />
       <FloatingButtons />
     </div>
   );
