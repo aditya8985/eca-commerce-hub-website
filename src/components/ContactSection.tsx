@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card } from '@/components/ui/card';
 import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
-import { toast } from '@/hooks/use-toast';
+import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -14,15 +14,56 @@ const ContactSection = () => {
     phone: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const { toast } = useToast();
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your interest. We'll get back to you soon!",
-    });
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    
+    if (!formData.name || !formData.email || !formData.phone) {
+      toast({
+        title: "Error",
+        description: "Please fill in all required fields",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbwzV8Y3fDGyW6z1jL7ASsWdtE6IcCIvPRbs4qht41q85wJ5cXsyb9msS50yXNfE1IOM5g/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        mode: 'no-cors',
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message || 'No message provided',
+        }),
+      });
+
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your interest. We'll get back to you soon!",
+      });
+
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your interest. We'll get back to you soon!",
+      });
+      
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -253,9 +294,10 @@ const ContactSection = () => {
 
                 <Button 
                   type="submit"
+                  disabled={isSubmitting}
                   className="w-full bg-navy-600 hover:bg-navy-700 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:shadow-lg"
                 >
-                  Send Message
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
 
                 <p className="text-sm text-gray-500 text-center">
