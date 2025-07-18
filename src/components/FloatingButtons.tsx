@@ -29,7 +29,7 @@ const FloatingButtons = () => {
 
   const handleWhatsAppClick = () => {
     // Replace with actual WhatsApp number
-    const phoneNumber = "919876543210";
+    const phoneNumber = "919022465538";
     const message = encodeURIComponent("Hi! I'm interested in ECA courses. Can you provide more details?");
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
