@@ -125,7 +125,7 @@ const ContactSection = () => {
               <h3 className="text-2xl font-playfair font-bold text-navy-800 mb-6">
                 Contact Information
               </h3>
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
                 {contactInfo.map((info, index) => (
                   <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white border border-gray-100">
                     <div className="flex items-start space-x-4">

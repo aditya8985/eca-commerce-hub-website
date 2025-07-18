@@ -87,7 +87,7 @@ const CoursesSection = () => {
 
         <div className="grid lg:grid-cols-3 gap-8">
           {courses.map((course, index) => (
-            <Card key={course.id} className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white border-0 shadow-lg">
+            <Card key={course.id} className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white border-0 shadow-lg flex flex-col h-full">
               {/* Header with gradient */}
               <div className={`${course.color} p-6 text-white relative`}>
                 <div className="flex items-center space-x-4 mb-4">
@@ -104,7 +104,7 @@ const CoursesSection = () => {
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col h-full">
                 {/* Course Info */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center space-x-2 text-sm text-gray-600">
@@ -133,7 +133,7 @@ const CoursesSection = () => {
                 </div>
 
                 {/* Features */}
-                <div className="mb-6">
+                <div className="mb-6 flex-grow">
                   <h4 className="font-semibold text-navy-800 mb-3">Course Features</h4>
                   <div className="grid grid-cols-2 gap-2">
                     {course.features.map((feature, idx) => (
@@ -148,7 +148,7 @@ const CoursesSection = () => {
                 {/* CTA Button */}
                 <Button 
                   onClick={() => scrollTo('contact')}
-                  className="w-full bg-navy-600 hover:bg-navy-700 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:shadow-lg"
+                  className="w-full bg-navy-600 hover:bg-navy-700 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:shadow-lg mt-auto"
                 >
                   Enroll Now
                 </Button>
