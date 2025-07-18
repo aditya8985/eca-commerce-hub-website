@@ -1,11 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { MessageCircle, GraduationCap, X } from 'lucide-react';
+import { MessageCircle, GraduationCap, X, Mail } from 'lucide-react';
 
 const FloatingButtons = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [showWhatsApp, setShowWhatsApp] = useState(true);
+  const [showEmail, setShowEmail] = useState(true);
 
   useEffect(() => {
     const toggleVisibility = () => {
@@ -32,6 +33,13 @@ const FloatingButtons = () => {
     const phoneNumber = "919876543210";
     const message = encodeURIComponent("Hi! I'm interested in ECA courses. Can you provide more details?");
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+  };
+
+  const handleEmailClick = () => {
+    const email = "contact@ekarthamacademy.com";
+    const subject = encodeURIComponent("Inquiry about ECA Courses");
+    const body = encodeURIComponent("Hi! I'm interested in ECA courses. Can you provide more details?");
+    window.open(`mailto:${email}?subject=${subject}&body=${body}`, '_blank');
   };
 
   if (!isVisible) return null;
@@ -61,6 +69,34 @@ const FloatingButtons = () => {
           {/* WhatsApp tooltip */}
           <div className="absolute right-16 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
             Chat with us on WhatsApp
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1 w-2 h-2 bg-gray-800 rotate-45"></div>
+          </div>
+        </div>
+      )}
+
+      {/* Email Button */}
+      {showEmail && (
+        <div className="relative animate-fade-in">
+          <div className="bg-blue-500 hover:bg-blue-600 text-white rounded-full p-4 shadow-2xl cursor-pointer transition-all duration-300 hover:scale-110 group">
+            <div 
+              onClick={handleEmailClick}
+              className="flex items-center justify-center"
+            >
+              <Mail className="w-6 h-6" />
+            </div>
+            
+            {/* Close button for Email */}
+            <button
+              onClick={() => setShowEmail(false)}
+              className="absolute -top-2 -right-2 bg-red-500 hover:bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+            >
+              <X className="w-3 h-3" />
+            </button>
+          </div>
+          
+          {/* Email tooltip */}
+          <div className="absolute right-16 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+            Send us an email
             <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1 w-2 h-2 bg-gray-800 rotate-45"></div>
           </div>
         </div>
