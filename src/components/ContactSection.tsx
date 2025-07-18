@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card } from '@/components/ui/card';
-import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle, Copy } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
@@ -17,6 +17,22 @@ const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const { toast } = useToast();
+
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText('info.ekarthamcommerceacademy@gmail.com');
+      toast({
+        title: "Email Copied!",
+        description: "Email address has been copied to your clipboard",
+      });
+    } catch (error) {
+      toast({
+        title: "Copy Failed",
+        description: "Please copy the email manually",
+        variant: "destructive",
+      });
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -91,9 +107,9 @@ const ContactSection = () => {
     {
       icon: <Mail className="w-6 h-6 text-eca-green-600" />,
       title: "Email Us",
-      details: ["info.ekarthamcommerceacademy@gmail.com"],
-      action: "Send Email",
-      link: "mailto:info.ekarthamcommerceacademy@gmail.com"
+      details: ["info.ekarthamcommerce", "academy@gmail.com"],
+      action: "Copy Email",
+      onClick: handleCopyEmail
     },
     {
       icon: <Clock className="w-6 h-6 text-eca-green-600" />,
@@ -159,6 +175,15 @@ const ContactSection = () => {
                           >
                             {info.action}
                           </a>
+                        )}
+                        {info.onClick && (
+                          <button 
+                            onClick={info.onClick}
+                            className="text-eca-green-600 text-sm font-medium hover:underline mt-2 inline-block flex items-center gap-1"
+                          >
+                            <Copy className="w-4 h-4" />
+                            {info.action}
+                          </button>
                         )}
                       </div>
                     </div>
