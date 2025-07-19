@@ -60,8 +60,11 @@ const TestSeriesSection = () => {
     <section id="test-series" className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
+          <div className="inline-flex items-center px-4 py-2 bg-navy-100 text-navy-800 rounded-full font-medium mb-6">
+            Test Series
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Test Series Comparison
+            Choose Your Perfect Test Series
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Choose the right test series for your preparation. Compare features and benefits across different test options.
