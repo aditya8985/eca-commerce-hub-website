@@ -21,7 +21,7 @@ const ReviewsSection = () => {
       id: 2,
       name: "Priya Gupta",
       course: "CS Executive",
-      image: "https://images.unsplash.com/photo-1494790108755-2616c0763476?w=150&h=150&fit=crop&crop=face",
+      image: "/lovable-uploads/bcf3d8f4-a95b-4fd5-bc9b-1882487478a3.png",
       rating: 5,
       review: "The practical approach and case studies at ECA gave me real-world insights. The doubt clearing sessions were incredibly helpful. Highly recommend for CS preparation!",
       achievement: "CS Executive - All Papers Cleared",
