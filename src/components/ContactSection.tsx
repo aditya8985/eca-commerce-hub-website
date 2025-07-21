@@ -50,7 +50,7 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbwzV8Y3fDGyW6z1jL7ASsWdtE6IcCIvPRbs4qht41q85wJ5cXsyb9msS50yXNfE1IOM5g/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbz2puQOBaFFtM7kflWPpcMzZ1r71oxfUFkicHC-_bszZjeF7jzShZyaaXBXghbPTlOjSQ/exec', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
