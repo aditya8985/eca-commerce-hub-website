@@ -302,11 +302,9 @@ const ContactSection = () => {
                     className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-eca-green-500 focus:border-eca-green-500 bg-white"
                   >
                     <option value="">Select a course</option>
-                    <option value="11th-12th-hsc">11th & 12th HSC</option>
-                    <option value="11th-12th-cbse">11th & 12th CBSE</option>
-                    <option value="ca-foundation">CA Foundation</option>
-                    <option value="ca-intermediate">CA Intermediate</option>
-                    <option value="cseet">CSEET</option>
+                    <option value="CA Foundation">CA Foundation</option>
+                    <option value="CS Executive">CS Executive</option>
+                    <option value="Commerce">Commerce</option>
                   </select>
                 </div>
 
