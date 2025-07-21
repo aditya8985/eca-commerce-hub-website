@@ -9,7 +9,7 @@ const ExpertsSection = () => {
       name: "CA Sejal Mittal",
       credentials: "CA, B.Com",
       speciality: "Accounting, Taxation, Audit",
-      image: "/lovable-uploads/e025a292-3f98-4493-8bcb-8a8ce6060e07.png",
+      image: "/lovable-uploads/b5af2740-1c13-4aa0-b953-89320e8fc768.png",
       quote: "Work on YOU and Work for YOU.",
       experience: "9+ Years",
       students: "350+",
@@ -19,7 +19,7 @@ const ExpertsSection = () => {
       id: 2,
       name: "Prof. Asif Khan",
       speciality: "Mathematics & Statistics", 
-      image: "/lovable-uploads/022e96be-9ed6-45ec-ba36-7588b1cb7ceb.png",
+      image: "/lovable-uploads/fb1256c9-2fa0-47f5-ba42-c4b9fc3bd533.png",
       quote: "Let's take the fear out of numbers and turn learning into an exciting, rewarding experience!",
       experience: "8+ Years",
       students: "500+",
@@ -30,7 +30,7 @@ const ExpertsSection = () => {
       name: "Adv. Priya Patni",
       credentials: "B.Com, LLM",
       speciality: "Corporate & Legal Education",
-      image: "/lovable-uploads/708e0f81-4137-4846-9cea-cae1b60f9915.png",
+      image: "/lovable-uploads/3fe36d9b-a49e-4ec7-aa98-daf440d699df.png",
       quote: "Mentoring over 500 students with practical legal insights.",
       experience: "6+ Years",
       students: "500+",
@@ -40,7 +40,7 @@ const ExpertsSection = () => {
       id: 4,
       name: "Prof. Priyanka Pal",
       speciality: "Economics",
-      image: "/lovable-uploads/8c8f0f2f-17bd-4b3e-9e42-11999a065373.png",
+      image: "/lovable-uploads/11258199-5fda-46a5-9db6-ffe6a20eafed.png",
       quote: "Bringing clarity to complex economic concepts.",
       experience: "11+ Years",
       students: "400+",
@@ -51,7 +51,7 @@ const ExpertsSection = () => {
       name: "CA Ritesh Pal",
       credentials: "CA, M.Com, LLB",
       speciality: "Taxation, Auditing, Law",
-      image: "/lovable-uploads/dd1fdcc5-0124-4ce8-b02e-612fdff5db14.png",
+      image: "/lovable-uploads/46ec0e21-edea-4e52-9c06-decbf3475375.png",
       quote: "Building strong financial foundations for future success.",
       experience: "8+ Years",
       students: "500+",
@@ -62,7 +62,7 @@ const ExpertsSection = () => {
       name: "CA. Priyam Taneja",
       credentials: "CA, BCom",
       speciality: "Finance, Taxation, Auditing, Accounting",
-      image: "/lovable-uploads/9c6de008-e938-48bb-a0c4-91859c1e1e58.png",
+      image: "/lovable-uploads/9a58d642-ba4b-4352-86d1-ff6cac57d49b.png",
       quote: "Worked at Morgan Stanley & UBS. My success mantra: Chase excellence.",
       experience: "8+ Years",
       students: "200+",
@@ -88,14 +88,14 @@ const ExpertsSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {experts.map((expert, index) => (
-            <Card key={expert.id} className="group overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white border-0 shadow-lg">
+            <Card key={expert.id} className="overflow-hidden bg-white border-0 shadow-lg">
               {/* Header with image */}
               <div className="relative">
                 <div className="aspect-square overflow-hidden">
                   <img 
                     src={expert.image} 
                     alt={expert.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 
