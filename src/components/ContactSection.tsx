@@ -10,9 +10,9 @@ import { useToast } from '@/hooks/use-toast';
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     phone: '',
     course: '',
+    email: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -58,9 +58,9 @@ const ContactSection = () => {
         mode: 'no-cors',
         body: JSON.stringify({
           name: formData.name,
-          email: formData.email,
           phone: formData.phone,
           course: formData.course,
+          email: formData.email,
           message: formData.message || 'No message provided',
         }),
       });
@@ -70,7 +70,7 @@ const ContactSection = () => {
         description: "Thank you for your interest. We'll get back to you soon!",
       });
 
-      setFormData({ name: '', email: '', phone: '', course: '', message: '' });
+      setFormData({ name: '', phone: '', course: '', email: '', message: '' });
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({
@@ -78,7 +78,7 @@ const ContactSection = () => {
         description: "Thank you for your interest. We'll get back to you soon!",
       });
       
-      setFormData({ name: '', email: '', phone: '', course: '', message: '' });
+      setFormData({ name: '', phone: '', course: '', email: '', message: '' });
     } finally {
       setIsSubmitting(false);
     }
@@ -302,9 +302,11 @@ const ContactSection = () => {
                     className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-eca-green-500 focus:border-eca-green-500 bg-white"
                   >
                     <option value="">Select a course</option>
+                    <option value="11th & 12th HSC">11th & 12th HSC</option>
+                    <option value="11th & 12th CBSE">11th & 12th CBSE</option>
                     <option value="CA Foundation">CA Foundation</option>
-                    <option value="CS Executive">CS Executive</option>
-                    <option value="Commerce">Commerce</option>
+                    <option value="CS Intermediate">CA Intermediate</option>
+                    <option value="CSEET">CSEET</option>
                   </select>
                 </div>
 
