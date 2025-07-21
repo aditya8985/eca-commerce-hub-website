@@ -305,7 +305,7 @@ const ContactSection = () => {
                     <option value="11th & 12th HSC">11th & 12th HSC</option>
                     <option value="11th & 12th CBSE">11th & 12th CBSE</option>
                     <option value="CA Foundation">CA Foundation</option>
-                    <option value="CS Intermediate">CA Intermediate</option>
+                    <option value="CA Intermediate">CA Intermediate</option>
                     <option value="CSEET">CSEET</option>
                   </select>
                 </div>
