@@ -68,7 +68,7 @@ const VideoSection = () => {
             </div>
             <div className="aspect-square overflow-hidden rounded-lg shadow-lg group">
               <img 
-                src="/lovable-uploads/a0bf6b0f-1df7-45c8-bf54-2dfc12dd8de0.png" 
+                src="/lovable-uploads/b9148f5c-da1e-4262-96f2-00b9aff9999a.png" 
                 alt="ECA Campus Life - Team celebration"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
