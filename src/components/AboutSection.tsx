@@ -18,7 +18,7 @@ const AboutSection = () => {
     {
       icon: <Award className="w-8 h-8 text-eca-green-600" />,
       title: "Proven track record",
-      description: "95% success rate with students excelling in CA Foundation, CS EET, and Commerce exams."
+      description: "95% success rate with students excelling in CA Foundation, CSEET, and Commerce exams."
     },
     {
       icon: <Video className="w-8 h-8 text-eca-green-600" />,
@@ -49,7 +49,7 @@ const AboutSection = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             ECA (Ekartham Commerce Academy) is a leading institution dedicated to excellence in commerce education, 
-            specializing in CA Foundation, CS EET, CA Intermediate, and Commerce (11th & 12th) HSC/CBSE Preparation.
+            specializing in CA Foundation, CSEET, CA Intermediate, and Commerce (11th & 12th) HSC/CBSE Preparation.
           </p>
         </div>
 

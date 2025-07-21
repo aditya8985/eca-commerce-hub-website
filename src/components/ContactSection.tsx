@@ -12,6 +12,7 @@ const ContactSection = () => {
     name: '',
     email: '',
     phone: '',
+    course: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -37,7 +38,7 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!formData.name || !formData.email || !formData.phone) {
+    if (!formData.name || !formData.email || !formData.phone || !formData.course) {
       toast({
         title: "Error",
         description: "Please fill in all required fields",
@@ -59,6 +60,7 @@ const ContactSection = () => {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
+          course: formData.course,
           message: formData.message || 'No message provided',
         }),
       });
@@ -68,7 +70,7 @@ const ContactSection = () => {
         description: "Thank you for your interest. We'll get back to you soon!",
       });
 
-      setFormData({ name: '', email: '', phone: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', course: '', message: '' });
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({
@@ -76,13 +78,13 @@ const ContactSection = () => {
         description: "Thank you for your interest. We'll get back to you soon!",
       });
       
-      setFormData({ name: '', email: '', phone: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', course: '', message: '' });
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -286,6 +288,26 @@ const ContactSection = () => {
                       className="border-gray-300 focus:border-eca-green-500 focus:ring-eca-green-500"
                     />
                   </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Course Interest *
+                  </label>
+                  <select
+                    name="course"
+                    value={formData.course || ''}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-eca-green-500 focus:border-eca-green-500 bg-white"
+                  >
+                    <option value="">Select a course</option>
+                    <option value="11th-12th-hsc">11th & 12th HSC</option>
+                    <option value="11th-12th-cbse">11th & 12th CBSE</option>
+                    <option value="ca-foundation">CA Foundation</option>
+                    <option value="ca-intermediate">CA Intermediate</option>
+                    <option value="cseet">CSEET</option>
+                  </select>
                 </div>
 
                 <div>

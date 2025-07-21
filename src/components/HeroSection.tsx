@@ -28,7 +28,7 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 bg-eca-green-100 text-eca-green-800 rounded-full font-medium mb-6">
             <span className="w-2 h-2 bg-eca-green-500 rounded-full mr-2 animate-pulse"></span>
-            Premier Commerce Education
+            Premier Commerce Education in PCMC
           </div>
 
           {/* Main heading */}
@@ -46,7 +46,7 @@ const HeroSection = () => {
 
           {/* Description */}
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Empowering students with world-class education in CA Foundation, CS EET, CA Intermediate, and Commerce (11th & 12th) HSC/CBSE Preparation through expert guidance and practical insights.
+            Empowering students with world-class education in CA Foundation, CSEET, CA Intermediate, and Commerce (11th & 12th) HSC/CBSE Preparation through expert guidance and practical insights.
           </p>
 
           {/* CTA Buttons */}

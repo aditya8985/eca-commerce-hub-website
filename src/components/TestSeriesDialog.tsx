@@ -28,7 +28,7 @@ const TestSeriesDialog = ({ children }: TestSeriesDialogProps) => {
     { id: "11th-12th-cbse", title: "11th & 12th CBSE" },
     { id: "ca-foundation", title: "CA Foundation" },
     { id: "ca-intermediate", title: "CA Intermediate" },
-    { id: "cs-eet", title: "CS EET" }
+    { id: "cs-eet", title: "CSEET" }
   ];
 
   const portions = [
