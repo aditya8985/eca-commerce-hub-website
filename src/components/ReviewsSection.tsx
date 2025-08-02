@@ -9,62 +9,62 @@ const ReviewsSection = () => {
   const reviews = [
     {
       id: 1,
-      name: "Arjun Sharma",
-      course: "CA Foundation",
-      image: "/lovable-uploads/197a53fb-4d99-4c84-a42e-fd4adda2c379.png",
+      name: "S",
+      course: "CA Foundation & 12th",
+      initial: "S",
       rating: 5,
-      review: "ECA transformed my understanding of accounting. The faculty's teaching method made complex concepts simple. I cleared CA Foundation in first attempt with distinction!",
-      achievement: "CA Foundation - First Attempt with Distinction",
+      review: "Priya mam, Asif sir and sejal mam help me alot to clear my CA foundation journey and in preparation of 12th also. Their support alot to me and also...",
+      achievement: "CA Foundation Success",
       date: "2024"
     },
     {
       id: 2,
-      name: "Priya Gupta",
-      course: "CS Executive",
-      image: "/lovable-uploads/5cac6c35-c8a9-4c7d-87e7-740b916b49d3.png",
+      name: "A",
+      course: "CA Foundation & 12th",
+      initial: "A",
       rating: 5,
-      review: "The practical approach and case studies at ECA gave me real-world insights. The doubt clearing sessions were incredibly helpful. Highly recommend for CS preparation!",
-      achievement: "CS Executive - All Papers Cleared",
+      review: "Priya ma'am, Asif sir, Sejal ma'am and all the teachers have all helped me clear my 12th as well as ca foundation. These aren't just my teachers but my mentors for the rest of life. Classes are interactive. Faculties are well experienced in their respective domain.very supportive",
+      achievement: "CA Foundation & 12th Success",
       date: "2024"
     },
     {
       id: 3,
-      name: "Rohit Patel",
-      course: "Commerce 12th",
-      image: "/lovable-uploads/9b1fdb9d-9a22-4e84-ade9-2546eabfc8e8.png",
+      name: "M",
+      course: "General",
+      initial: "M",
       rating: 5,
-      review: "Scored 94% in 12th boards thanks to ECA's systematic approach. The teachers are not just knowledgeable but also very supportive and encouraging.",
-      achievement: "12th Commerce - 94% Score",
+      review: "Best teaching staff, they are very friendly and teach in the best way possible. The teachers are highly knowledgeable and engaging.",
+      achievement: "Excellent Learning Experience",
       date: "2024"
     },
     {
       id: 4,
-      name: "Sneha Reddy",
-      course: "CA Foundation",
-      image: "/lovable-uploads/5514f072-ee9b-4791-b87a-e73ea135e68b.png",
+      name: "P",
+      course: "Commerce",
+      initial: "P",
       rating: 5,
-      review: "ECA's mock tests and regular assessments kept me on track. The individual attention from faculty helped me overcome my weak areas effectively.",
-      achievement: "CA Foundation - Top 10 Rank",
-      date: "2023"
+      review: "It was great experience with Highly qualified faculties in Ekartham Commerce Academy in PCMC area, Pune",
+      achievement: "Great Learning Experience",
+      date: "2024"
     },
     {
       id: 5,
-      name: "Vikash Kumar",
-      course: "CS Executive",
-      image: "/lovable-uploads/336ab6e1-86ea-43cc-a9af-3e3da9aa21dd.png",
+      name: "K",
+      course: "CA & CS",
+      initial: "K",
       rating: 5,
-      review: "The faculty at ECA brings industry experience to classroom. This practical knowledge was invaluable for my CS Executive preparation and career growth.",
-      achievement: "CS Executive + Job at MNC",
-      date: "2023"
+      review: "Best academy for ca , cs etc and best academy in Chinchwad unbeatable",
+      achievement: "Top Academy Experience",
+      date: "2024"
     },
     {
       id: 6,
-      name: "Ananya Singh",
-      course: "Commerce 11th",
-      image: "/lovable-uploads/a226e52b-fe0e-4597-ae3e-2482ad7f9f23.png",
+      name: "H",
+      course: "General",
+      initial: "H",
       rating: 5,
-      review: "ECA built my foundation strong in commerce. The conceptual clarity I gained here is helping me excel in advanced courses. Great teaching methodology!",
-      achievement: "11th Commerce - 96% Score",
+      review: "Best academy in pcmc .the faculties make learning easy and enjoyable. I love ECA",
+      achievement: "Amazing Learning Experience",
       date: "2024"
     }
   ];
@@ -117,14 +117,14 @@ const ReviewsSection = () => {
               <Quote className="absolute top-6 left-6 w-12 h-12 text-eca-green-200" />
               
               <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
-                {/* Student image */}
+                {/* Student initial */}
                 <div className="flex-shrink-0">
                   <div className="relative">
-                    <img
-                      src={reviews[currentReview].image}
-                      alt={reviews[currentReview].name}
-                      className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
-                    />
+                    <div className="w-32 h-32 rounded-full bg-gradient-to-br from-eca-green-400 to-eca-green-600 border-4 border-white shadow-lg flex items-center justify-center">
+                      <span className="text-4xl font-bold text-white">
+                        {reviews[currentReview].initial}
+                      </span>
+                    </div>
                     <div className="absolute -bottom-2 -right-2 bg-eca-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
                       <span className="text-lg font-bold">{currentReview + 1}</span>
                     </div>
