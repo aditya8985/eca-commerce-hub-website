@@ -9,7 +9,7 @@ const ReviewsSection = () => {
   const reviews = [
     {
       id: 1,
-      name: "S",
+      name: "Shraddha Natekar",
       course: "CA Foundation & 12th",
       initial: "S",
       rating: 5,
@@ -19,7 +19,7 @@ const ReviewsSection = () => {
     },
     {
       id: 2,
-      name: "A",
+      name: "Aishwarya Mehtha",
       course: "CA Foundation & 12th",
       initial: "A",
       rating: 5,
@@ -29,7 +29,7 @@ const ReviewsSection = () => {
     },
     {
       id: 3,
-      name: "M",
+      name: "Melissa Fernandes",
       course: "General",
       initial: "M",
       rating: 5,
@@ -39,7 +39,7 @@ const ReviewsSection = () => {
     },
     {
       id: 4,
-      name: "P",
+      name: "Prashant Arun Warankar",
       course: "Commerce",
       initial: "P",
       rating: 5,
@@ -49,7 +49,7 @@ const ReviewsSection = () => {
     },
     {
       id: 5,
-      name: "K",
+      name: "Komal Sah",
       course: "CA & CS",
       initial: "K",
       rating: 5,
@@ -59,7 +59,7 @@ const ReviewsSection = () => {
     },
     {
       id: 6,
-      name: "H",
+      name: "Harsha Bhagat",
       course: "General",
       initial: "H",
       rating: 5,
