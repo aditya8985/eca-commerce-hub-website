@@ -11,7 +11,7 @@ const ExpertsSection = () => {
       speciality: "Accounting, Taxation, Audit",
       image: "/lovable-uploads/b5af2740-1c13-4aa0-b953-89320e8fc768.png",
       quote: "Work on YOU and Work for YOU.",
-      experience: "9+ Years",
+      experience: "5+ Years",
       students: "350+",
       expertise: ["Advanced Accounting", "GST & Tax Planning", "Internal Audit", "Financial Reporting"]
     },
@@ -42,7 +42,7 @@ const ExpertsSection = () => {
       speciality: "Economics",
       image: "/lovable-uploads/11258199-5fda-46a5-9db6-ffe6a20eafed.png",
       quote: "Bringing clarity to complex economic concepts.",
-      experience: "11+ Years",
+      experience: "5+ Years",
       students: "400+",
       expertise: ["Micro & Macro Economics", "Economic Analysis", "Business Economics"]
     },
@@ -64,8 +64,8 @@ const ExpertsSection = () => {
       speciality: "Finance, Taxation, Auditing, Accounting",
       image: "/lovable-uploads/9a58d642-ba4b-4352-86d1-ff6cac57d49b.png",
       quote: "Worked at Morgan Stanley & UBS. My success mantra: Chase excellence.",
-      experience: "8+ Years",
-      students: "200+",
+      experience: "2+ Years",
+      students: "100+",
       expertise: ["Investment Banking", "Financial Analysis", "Advanced Taxation", "Audit & Assurance"],
       highlight: "Ex-Morgan Stanley & UBS"
     }

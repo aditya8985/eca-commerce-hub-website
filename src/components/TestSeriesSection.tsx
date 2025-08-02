@@ -67,7 +67,7 @@ const TestSeriesSection = () => {
             Choose Your Perfect Test Series
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Choose the right test series for your preparation. Compare features and benefits across different test options.
+            Choose the right test series of <span className="font-semibold">CA Foundation & CA Intermediate</span> for your preparation. Compare features and benefits across different test options.
           </p>
         </div>
 
