@@ -44,7 +44,7 @@ const AboutSection = () => {
           <div className="inline-flex items-center px-4 py-2 bg-navy-100 text-navy-800 rounded-full font-medium mb-6">
             About ECA
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-navy-900 mb-6">
+          <h1 className="sm:text-4xl lg:text-5xl font-playfair font-bold text-navy-900 mb-6">
             Best CA and Commerce <span className="gradient-text">Coaching Classes In Pimpri Chinchwad Pune</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
