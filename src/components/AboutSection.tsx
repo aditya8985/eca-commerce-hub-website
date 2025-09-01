@@ -44,9 +44,9 @@ const AboutSection = () => {
           <div className="inline-flex items-center px-4 py-2 bg-navy-100 text-navy-800 rounded-full font-medium mb-6">
             About ECA
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-navy-900 mb-6">
-            Premier Commerce <span className="gradient-text">Coaching Academy</span>
-          </h2>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-navy-900 mb-6">
+            Best CA and Commerce <span className="gradient-text">Coaching Classes In Pimpri Chinchwad Pune</span>
+          </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             ECA (Ekartham Commerce Academy) is a leading institution dedicated to excellence in commerce education, 
             specializing in CA Foundation, CSEET, CA Intermediate, and Commerce (11th & 12th) HSC/CBSE Preparation.
